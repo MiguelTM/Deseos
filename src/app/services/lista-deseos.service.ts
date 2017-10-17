@@ -21,7 +21,7 @@ export class ListaDeseosService {
   }
 
   actualizarData() {
-
+ console.log(this.listas);
     localStorage.setItem("data", JSON.stringify(this.listas));
 
   }
@@ -36,6 +36,16 @@ export class ListaDeseosService {
   agregarLista(lista: Lista) {
 
     this.listas.push(lista);
+    this.actualizarData();
+  }
+
+  eliminarLista(idx:number) {
+
+  
+
+    this.listas.splice(idx, 1);
+
+
     this.actualizarData();
   }
 

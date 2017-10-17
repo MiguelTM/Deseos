@@ -59,7 +59,7 @@ export class AgregarComponent implements OnInit {
     lista.items = this.items;
 
     //this._listaDeseos.listas.push(lista);
-this._listaDeseos.agregarLista(lista);
+    this._listaDeseos.agregarLista(lista);
     //si ya nos movimos una vez
     this.navCtrl.pop();
 
